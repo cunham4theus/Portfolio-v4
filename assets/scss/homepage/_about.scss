@@ -299,6 +299,7 @@
 
     @include respond(phone) {
       flex-direction: row;
+      justify-content: space-between;
     }
 
     &-square {

@@ -533,6 +533,7 @@ a {
 @media (min-width: 37.5rem) {
   .about__skills {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 .about__skills-square {
@@ -619,7 +620,7 @@ a {
 }
 .projects {
   position: relative;
-  height: 90rem;
+  height: 70rem;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -628,7 +629,7 @@ a {
 }
 .projects .detail-1 {
   position: absolute;
-  bottom: 10%;
+  bottom: 2%;
   left: 3%;
   width: 5rem;
 }
@@ -645,7 +646,7 @@ a {
   z-index: 30;
   color: #383838;
   letter-spacing: 0.5rem;
-  bottom: 15%;
+  bottom: 5%;
 }
 @media (min-width: 37.5rem) {
   .projects .title-left {
@@ -656,7 +657,7 @@ a {
   .projects .title-left {
     color: #025555;
     letter-spacing: 1.2rem;
-    bottom: 10%;
+    bottom: 2%;
   }
 }
 .projects .title-right {
@@ -685,8 +686,8 @@ a {
 }
 .projects .detail-3 {
   position: absolute;
-  top: 10%;
-  left: 0;
+  top: 5%;
+  right: 20%;
 }
 .projects .swiper {
   width: 100%;
