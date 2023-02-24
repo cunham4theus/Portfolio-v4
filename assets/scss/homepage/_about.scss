@@ -12,9 +12,24 @@
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
+    
 
     @include respond(tab-land) {
       letter-spacing: 0.6rem;
+    }
+  }
+
+  .bar-items {   
+    display: flex;
+    justify-content: center;  
+    gap: 2rem; 
+
+    li {
+      font-size: 4rem;
+
+      i {
+        color: $cl-gray-600;
+      }
     }
   }
 

@@ -269,6 +269,17 @@ a {
     letter-spacing: 0.6rem;
   }
 }
+.about .bar-items {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.about .bar-items li {
+  font-size: 4rem;
+}
+.about .bar-items li i {
+  color: #383838;
+}
 .about .swiper {
   width: 100%;
   height: max-content;
@@ -609,20 +620,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.projects .bar-items {
-  position: absolute;
-  display: flex;
-  gap: 2rem;
-  bottom: 1%;
-  left: 50%;
-  transform: translate(-50%);
-}
-.projects .bar-items li {
-  font-size: 4rem;
-}
-.projects .bar-items li i {
-  color: #383838;
 }
 .projects .detail-1 {
   position: absolute;

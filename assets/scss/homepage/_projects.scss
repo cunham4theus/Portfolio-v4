@@ -8,24 +8,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  .bar-items {
-    position: absolute;
-    display: flex;
-    gap: 2rem;
-    bottom: 1%;
-    left: 50%;
-    transform: translate(-50%);
-
-    li {
-      font-size: 4rem;
-
-      i {
-        color: $cl-gray-600;
-      }
-    }
-  }
+  justify-content: center;  
 
   .detail-1 {
     position: absolute;
