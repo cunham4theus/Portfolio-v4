@@ -9,9 +9,9 @@
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(
     to bottom,
-    rgba($cl-primary, 1),   
+    rgba($cl-primary, 1),
     rgba($cl-primary, 1),
   );
-  border-left: 2px solid $cl-gray-800;
+ box-shadow: inset 2px 0 $cl-gray-800;
   border-radius: 1px;
 }
