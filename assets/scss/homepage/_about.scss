@@ -25,7 +25,11 @@
     gap: 2rem; 
 
     li {
-      font-size: 4rem;
+      font-size: 2rem;
+
+      @include respond(phone) {
+        font-size: 4rem;
+      }
 
       i {
         color: $cl-gray-600;

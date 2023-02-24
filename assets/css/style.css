@@ -275,7 +275,12 @@ a {
   gap: 2rem;
 }
 .about .bar-items li {
-  font-size: 4rem;
+  font-size: 2rem;
+}
+@media (min-width: 37.5rem) {
+  .about .bar-items li {
+    font-size: 4rem;
+  }
 }
 .about .bar-items li i {
   color: #383838;
