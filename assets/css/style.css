@@ -938,10 +938,10 @@ a {
 .contact .contact__form .form__group textarea:focus {
   outline: none;
   border-radius: 0 0 0.2rem 0.2rem;
-  border: 0.1rem solid rgba(103, 247, 103, 0.7);
-  box-shadow: 0 0.4rem 0 #67f767, 0 1rem 3rem rgba(103, 247, 103, 0.2);
+  border: 0.1rem solid rgba(2, 85, 85, 0.7);
+  box-shadow: 0 0.4rem 0 #025555, 0 1rem 3rem rgba(2, 85, 85, 0.2);
   background-color: #1f1f1f;
-  border: 0.1rem solid #afafaf;
+  border: 0.1rem solid #025555;
   border-radius: 0.6rem;
   color: #d8d8d8;
 }
@@ -1116,6 +1116,20 @@ a {
 }
 .footer__copy a i {
   margin-right: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #025555, #025555);
+  border-left: 2px solid #181818;
+  border-radius: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

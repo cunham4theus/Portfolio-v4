@@ -93,11 +93,11 @@
         &:focus {
           outline: none;
           border-radius: 0 0 0.2rem 0.2rem;
-          border: 0.1rem solid rgba(#67f767, 0.7);
-          box-shadow: 0 0.4rem 0 rgba(#67f767, 1),
-            0 1rem 3rem rgba(#67f767, 0.2);
+          border: 0.1rem solid rgba($cl-primary, 0.7);
+          box-shadow: 0 0.4rem 0 rgba($cl-primary, 1),
+            0 1rem 3rem rgba($cl-primary, 0.2);
           background-color: darken($cl-gray-600, 10%);
-          border: 0.1rem solid rgba($cl-gray-100, 1);
+          border: 0.1rem solid rgba($cl-primary, 1);
           border-radius: 0.6rem;
           color: $cl-white-400;
         }
@@ -251,7 +251,7 @@
       }
 
       i {
-        color: $cl-red-700;
+        color: $cl-primary;
       }
     }
   }

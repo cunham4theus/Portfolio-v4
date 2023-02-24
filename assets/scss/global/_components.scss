@@ -7,7 +7,7 @@
   background-image: linear-gradient(
     to right,
     $cl-gray-900 85%,
-    $cl-red-700 15%
+    $cl-primary 15%
   );
 }
 
@@ -16,7 +16,7 @@
 }
 
 .btn {
-  background-image: linear-gradient(to bottom, $cl-red-700, $cl-black);
+  background-image: linear-gradient(to bottom, $cl-primary, $cl-black);
   box-shadow: 0 0 15px $cl-gray-900;
   padding: 0.5rem 3rem;
   color: $cl-white-400;
@@ -97,7 +97,6 @@
   bottom: 2rem;
   right: 0;
   display: block;
-  
 
   img {
     width: 100%;
