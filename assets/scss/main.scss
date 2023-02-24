@@ -1,0 +1,10 @@
+@use './global/variables';
+@use './global/mixins';
+@use './global/global';
+@use './global/components';
+
+@use './homepage/header';
+@use './homepage/about';
+@use './homepage/projects';
+@use './homepage/contact';
+@use './homepage/footer';

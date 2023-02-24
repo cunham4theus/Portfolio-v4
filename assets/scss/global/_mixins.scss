@@ -1,0 +1,96 @@
+@use './variables' as *;
+
+@mixin container-size {
+  max-width: 124rem;
+  margin-inline: auto;
+  padding: 0 1rem;
+}
+
+@mixin padding-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@mixin container-section {
+  width: 100%;
+  height: 70rem;
+  background-color: $cl-gray-800;
+  box-shadow: inset 0.4rem 0 $cl-red-700, 0 0 15px $cl-gray-900;
+  border-radius: 4px; 
+  position: relative;
+}
+
+@mixin title-left {
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-size: 4.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.2rem;
+  color: $cl-red-700;  
+  z-index: 30; 
+
+  @include respond(phone) {
+    font-size: 9.6rem;
+  }
+}
+
+@mixin title-right {
+  position: absolute;
+  font-size: 9.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+  color: $cl-gray-700;
+  top: 15%;
+  right: -50%;
+  z-index: 1; 
+
+  @include respond(phone) {
+    font-size: 16.6rem;
+    right: -15%;
+  }
+}
+
+
+// !MÉDIA
+/* 
+-----------------------------------------------. 
+!argumento do $breakpoint                      | 
+...............................................| 
+320px - 600px  mobile phone = phone            |
+600px - 900px tablet-portrait = tab-port       |
+900px - 1200px tablet-landscape = tab-land     |
+1200px - 1800px tamanho normal do browser      |
+1800px + big desktop = big-desktop      
+xxpx/16px = xxem       |
+-----------------------------------------------°
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (min-width: 37.5rem)  { 
+      @content
+    };
+  }
+
+  @if $breakpoint == tab-port {
+    @media (min-width: 56.2rem) /* 900px/16px */{
+      @content
+    };
+  }
+
+  @if $breakpoint == tab-land {
+    @media (min-width: 75rem) /* 1200px/16px */{
+      @content
+    };
+  }
+
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5rem) /* 1800px/16px */{
+      @content
+    };
+  }
+}

@@ -1,0 +1,70 @@
+@use '../global/variables' as *;
+@use '../global/mixins' as *;
+
+.header {
+  @include container-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include padding-section;
+
+  @include respond(tab-port) {
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+
+    @include respond(phone) {
+      font-weight: 300;
+      font-size: 4.8rem;
+    }
+  }
+
+  &__nav {   
+    gap: 1.5rem;
+    display: none;
+    font-weight: 400;
+
+    @include respond(tab-land) {
+      display: grid;
+    }
+
+    &-items {
+      display: flex;
+      align-items: center;
+      position: relative;
+      transition: all 0.2s ease-in-out;
+
+      &::after {
+        content: '';
+        width: 0;
+        height: 0.2rem;
+        position: absolute;
+        border-radius: 1px;
+        background-color: $cl-white-400;
+        top: 34%;
+        left: -60px;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+      }
+
+      a {
+        color: $cl-white-400;
+      }
+
+      @include respond(tab-land) {
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        &:hover::after {
+          width: 5rem;
+        }
+      }
+    }
+  }
+}
