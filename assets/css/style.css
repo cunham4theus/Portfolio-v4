@@ -241,7 +241,7 @@ a {
 }
 .header__nav-items a {
   color: #d8d8d8;
-  font-weight: 700;
+  font-weight: 400;
 }
 @media (min-width: 75rem) {
   .header__nav-items:hover {
