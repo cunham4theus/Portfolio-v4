@@ -57,7 +57,7 @@ a {
 .background {
   max-width: 140rem;
   margin-inline: auto;
-  background-image: linear-gradient(to right, #111 85%, #025555 15%);
+  background-image: linear-gradient(to right, #111 90%, #9b1212 10%);
 }
 
 .main-container {
@@ -67,7 +67,7 @@ a {
 }
 
 .btn {
-  background-image: linear-gradient(to bottom, #025555, #000);
+  background-image: linear-gradient(to bottom, #9b1212, #000);
   box-shadow: 0 0 15px #111;
   padding: 0.5rem 3rem;
   color: #d8d8d8;
@@ -241,6 +241,7 @@ a {
 }
 .header__nav-items a {
   color: #d8d8d8;
+  font-weight: 700;
 }
 @media (min-width: 75rem) {
   .header__nav-items:hover {
@@ -302,7 +303,7 @@ a {
   grid-template-columns: 15rem 1fr;
   background-color: #181818;
   border-radius: 4px;
-  box-shadow: inset 0.4rem 0 #025555, 0 0 5px #111;
+  box-shadow: inset 0.4rem 0 #9b1212, 0 0 5px #111;
   padding: 1rem;
 }
 .about .swiper-wrapper .card__icon {
@@ -397,7 +398,7 @@ a {
   width: 100%;
   height: 70rem;
   background-color: #181818;
-  box-shadow: inset 0.4rem 0 #025555, 0 0 15px #111;
+  box-shadow: inset 0.4rem 0 #9b1212, 0 0 15px #111;
   border-radius: 4px;
   position: relative;
   display: grid;
@@ -457,7 +458,7 @@ a {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.2rem;
-  color: #025555;
+  color: #9b1212;
   z-index: 30;
   z-index: 10;
 }
@@ -642,7 +643,7 @@ a {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.2rem;
-  color: #025555;
+  color: #9b1212;
   z-index: 30;
   color: #383838;
   letter-spacing: 0.5rem;
@@ -655,7 +656,7 @@ a {
 }
 @media (min-width: 37.5rem) {
   .projects .title-left {
-    color: #025555;
+    color: #9b1212;
     letter-spacing: 1.2rem;
     bottom: 2%;
   }
@@ -711,7 +712,7 @@ a {
 }
 .projects .swiper .card {
   background-color: #181818;
-  box-shadow: inset 0.4rem 0 #025555, 0 0 15px #111;
+  box-shadow: inset 0.4rem 0 #9b1212, 0 0 15px #111;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -823,7 +824,7 @@ a {
   width: 100%;
   height: 70rem;
   background-color: #181818;
-  box-shadow: inset 0.4rem 0 #025555, 0 0 15px #111;
+  box-shadow: inset 0.4rem 0 #9b1212, 0 0 15px #111;
   border-radius: 4px;
   position: relative;
   display: flex;
@@ -864,7 +865,7 @@ a {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.2rem;
-  color: #025555;
+  color: #9b1212;
   z-index: 30;
   bottom: 10%;
   left: 5%;
@@ -939,10 +940,10 @@ a {
 .contact .contact__form .form__group textarea:focus {
   outline: none;
   border-radius: 0 0 0.2rem 0.2rem;
-  border: 0.1rem solid rgba(2, 85, 85, 0.7);
-  box-shadow: 0 0.4rem 0 #025555, 0 1rem 3rem rgba(2, 85, 85, 0.2);
+  border: 0.1rem solid rgba(155, 18, 18, 0.7);
+  box-shadow: 0 0.4rem 0 #9b1212, 0 1rem 3rem rgba(155, 18, 18, 0.2);
   background-color: #1f1f1f;
-  border: 0.1rem solid #025555;
+  border: 0.1rem solid #9b1212;
   border-radius: 0.6rem;
   color: #d8d8d8;
 }
@@ -1080,7 +1081,7 @@ a {
   }
 }
 .contact__personal li i {
-  color: #025555;
+  color: #9b1212;
 }
 
 .footer {
@@ -1128,7 +1129,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to bottom, #025555, #025555);
+  background-image: linear-gradient(to bottom, #9b1212, #9b1212);
   box-shadow: inset 2px 0 #181818;
   border-radius: 1px;
 }

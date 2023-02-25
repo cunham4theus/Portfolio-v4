@@ -7,7 +7,6 @@
   justify-content: center;
   align-items: center;
   @include padding-section;
-
   @include respond(tab-port) {
     justify-content: space-between;
   }
@@ -54,6 +53,7 @@
 
       a {
         color: $cl-white-400;
+        font-weight: 700;
       }
 
       @include respond(tab-land) {
