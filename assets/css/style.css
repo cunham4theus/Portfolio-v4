@@ -57,7 +57,7 @@ a {
 .background {
   max-width: 140rem;
   margin-inline: auto;
-  background-image: linear-gradient(to right, #111 90%, #9b1212 10%);
+  background-image: linear-gradient(to right, #111 99%, #9b1212 1%);
 }
 
 .main-container {
