@@ -48,7 +48,7 @@
       padding-bottom: 6rem;
 
       .card {
-        width: 38rem;
+        width: 100%;
         height: max-content;
         display: grid;
         grid-template-columns: 15rem 1fr;
@@ -56,6 +56,7 @@
         border-radius: 4px;
         box-shadow: inset 0.4rem 0 $cl-primary, 0 0 5px $cl-gray-900;
         padding: 1rem;
+       
 
         &__icon {
           display: flex;
@@ -77,107 +78,14 @@
           }
         }
 
-        &__progress {
+        &__text {
           display: flex;
-          align-items: center;
           justify-content: center;
-
-          .skill {
-            width: 120px;
-            height: 120px;
-            position: relative;
-
-            @include respond(phone) {
-            }
-
-            .outer {
-              width: 120px;
-              height: 120px;
-              border-radius: 50%;
-              box-shadow: 4px 4px 5px -1px rgba($color: $cl-gray-700, $alpha:
-                      0.15),
-                -4px -4px 5px -1px rgba($color: $cl-gray-700, $alpha: 0.7);
-              padding: 10px;
-
-              @include respond(phone) {
-              }
-
-              .inner {
-                height: 100px;
-                width: 100px;
-                border-radius: 50%;
-                box-shadow: inset 4px 4px 5px -1px rgba($color: $cl-gray-700, $alpha:
-                        0.15),
-                  inset 4px 4px 5px 1px rgba($color: $cl-gray-700, $alpha: 0.7),
-                  0.5px 0.5px 0 rgba($color: $cl-gray-700, $alpha: 0.1),
-                  0.5px 0.5px 0 rgba($color: $cl-gray-700, $alpha: 0.15),
-                  0 12px 10px -10px rgba($color: $cl-gray-700, $alpha: 0.05);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                @include respond(phone) {
-                }
-
-                #number {
-                  font-weight: 600;
-                }
-              }
-            }
-
-            svg {
-              position: absolute;
-              top: 0;
-              left: 0;
-
-              circle {
-                fill: none;
-                stroke: url(#GradientColor);
-                stroke-width: 10px;
-                stroke-dasharray: 350;
-                stroke-dashoffset: 350;
-              }
-
-              .html-progress {
-                animation: html-progress 2s linear forwards;
-              }
-
-              .css-progress {
-                animation: css-progress 2s linear forwards;
-              }
-
-              .js-progress {
-                animation: js-progress 2s linear forwards;
-              }
-
-              .sass-progress {
-                animation: sass-progress 2s linear forwards;
-              }
-
-              .figma-progress {
-                animation: figma-progress 2s linear forwards;
-              }
-
-              .bootstrap-progress {
-                animation: bootstrap-progress 2s linear forwards;
-              }
-
-              .wordpress-progress {
-                animation: wordpress-progress 2s linear forwards;
-              }
-
-              .elementor-progress {
-                animation: elementor-progress 2s linear forwards;
-              }
-
-              .react-progress {
-                animation: react-progress 2s linear forwards;
-              }
-
-              .git-progress {
-                animation: git-progress 2s linear forwards;
-              }
-            }
+          align-items: center;
+          
+          span {
+            font-size: 2rem;
+            font-weight: 400;
           }
         }
       }
@@ -200,21 +108,21 @@
 
       &::after {
         content: '';
-        background-image: url('/assets/img/about-img.png');
+        background-image: url('/assets/img/img_about.png');
         background-position: bottom;
         background-size: cover;
         background-repeat: no-repeat;
         display: block;
         position: absolute;
-        top: -6rem;
-        left: -2rem;
+        bottom: 0rem;
+        left: 0rem;
         opacity: 0.8;
         filter: brightness(0.35);
         z-index: 5;
 
         @include respond(phone) {
-          width: 120%;
-          height: 120%;
+          width: 100%;
+          height: 100%;
         }
       }
     }

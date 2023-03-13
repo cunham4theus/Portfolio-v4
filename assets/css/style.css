@@ -297,7 +297,7 @@ a {
   padding-bottom: 6rem;
 }
 .about .swiper-wrapper .card {
-  width: 38rem;
+  width: 100%;
   height: max-content;
   display: grid;
   grid-template-columns: 15rem 1fr;
@@ -323,76 +323,14 @@ a {
   right: 0;
   background-color: #383838;
 }
-.about .swiper-wrapper .card__progress {
+.about .swiper-wrapper .card__text {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-.about .swiper-wrapper .card__progress .skill {
-  width: 120px;
-  height: 120px;
-  position: relative;
-}
-.about .swiper-wrapper .card__progress .skill .outer {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  box-shadow: 4px 4px 5px -1px rgba(40, 40, 40, 0.15), -4px -4px 5px -1px rgba(40, 40, 40, 0.7);
-  padding: 10px;
-}
-.about .swiper-wrapper .card__progress .skill .outer .inner {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  box-shadow: inset 4px 4px 5px -1px rgba(40, 40, 40, 0.15), inset 4px 4px 5px 1px rgba(40, 40, 40, 0.7), 0.5px 0.5px 0 rgba(40, 40, 40, 0.1), 0.5px 0.5px 0 rgba(40, 40, 40, 0.15), 0 12px 10px -10px rgba(40, 40, 40, 0.05);
-  display: flex;
   align-items: center;
-  justify-content: center;
 }
-.about .swiper-wrapper .card__progress .skill .outer .inner #number {
-  font-weight: 600;
-}
-.about .swiper-wrapper .card__progress .skill svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.about .swiper-wrapper .card__progress .skill svg circle {
-  fill: none;
-  stroke: url(#GradientColor);
-  stroke-width: 10px;
-  stroke-dasharray: 350;
-  stroke-dashoffset: 350;
-}
-.about .swiper-wrapper .card__progress .skill svg .html-progress {
-  animation: html-progress 2s linear forwards;
-}
-.about .swiper-wrapper .card__progress .skill svg .css-progress {
-  animation: css-progress 2s linear forwards;
-}
-.about .swiper-wrapper .card__progress .skill svg .js-progress {
-  animation: js-progress 2s linear forwards;
-}
-.about .swiper-wrapper .card__progress .skill svg .sass-progress {
-  animation: sass-progress 2s linear forwards;
-}
-.about .swiper-wrapper .card__progress .skill svg .figma-progress {
-  animation: figma-progress 2s linear forwards;
-}
-.about .swiper-wrapper .card__progress .skill svg .bootstrap-progress {
-  animation: bootstrap-progress 2s linear forwards;
-}
-.about .swiper-wrapper .card__progress .skill svg .wordpress-progress {
-  animation: wordpress-progress 2s linear forwards;
-}
-.about .swiper-wrapper .card__progress .skill svg .elementor-progress {
-  animation: elementor-progress 2s linear forwards;
-}
-.about .swiper-wrapper .card__progress .skill svg .react-progress {
-  animation: react-progress 2s linear forwards;
-}
-.about .swiper-wrapper .card__progress .skill svg .git-progress {
-  animation: git-progress 2s linear forwards;
+.about .swiper-wrapper .card__text span {
+  font-size: 2rem;
+  font-weight: 400;
 }
 .about__hero {
   width: 100%;
@@ -416,22 +354,22 @@ a {
 }
 .about__hero-left::after {
   content: "";
-  background-image: url("/assets/img/about-img.png");
+  background-image: url("/assets/img/img_about.png");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
   position: absolute;
-  top: -6rem;
-  left: -2rem;
+  bottom: 0rem;
+  left: 0rem;
   opacity: 0.8;
   filter: brightness(0.35);
   z-index: 5;
 }
 @media (min-width: 37.5rem) {
   .about__hero-left::after {
-    width: 120%;
-    height: 120%;
+    width: 100%;
+    height: 100%;
   }
 }
 .about__hero .title-name {
