@@ -7,11 +7,7 @@
  background-color: $cl-gray-900;
 }
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(
-    to bottom,
-    rgba($cl-primary, 1),
-    rgba($cl-primary, 1),
-  );
+  background: $cl-primary;
  box-shadow: inset 2px 0 $cl-gray-800;
   border-radius: 1px;
 }

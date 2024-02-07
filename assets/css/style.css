@@ -57,7 +57,7 @@ a {
 .background {
   max-width: 140rem;
   margin-inline: auto;
-  background-image: linear-gradient(to right, #111 99%, #9b1212 1%);
+  background-image: linear-gradient(to left, #111 99.5%, #9b1212 0.5%);
 }
 
 .main-container {
@@ -1080,7 +1080,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to bottom, #9b1212, #9b1212);
+  background: #9b1212;
   box-shadow: inset 2px 0 #181818;
   border-radius: 1px;
 }
