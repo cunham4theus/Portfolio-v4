@@ -56,7 +56,6 @@
         border-radius: 4px;
         box-shadow: inset 0.4rem 0 $cl-primary, 0 0 5px $cl-gray-900;
         padding: 1rem;
-       
 
         &__icon {
           display: flex;
@@ -82,7 +81,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          
+
           span {
             font-size: 2rem;
             font-weight: 400;
@@ -108,9 +107,9 @@
 
       &::after {
         content: '';
-        background-image: url('/assets/img/img_about.png');
-        background-position: bottom;
-        background-size: cover;
+        background-image: url('https://raw.githubusercontent.com/cunham4theus/fotos/main/img/401851109_18024935203805755_2437252116937850808_n%20(1).jpg?token=GHSAT0AAAAAACM4Z3IU7V7G2ONONN5G3CXSZOEASVA');
+        background-position: center;
+        background-size: contain;
         background-repeat: no-repeat;
         display: block;
         position: absolute;
